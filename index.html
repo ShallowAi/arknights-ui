@@ -123,11 +123,10 @@
 	</div>
 	<header>
 		<div class="option">
-			<div class="settings" title="Settings"></div>
+			<div class="settings" title="Settings"><div id="app" style="display: none"></div></div>
 			<div class="notice" title="Notification"></div>
 			<div class="mail" title="Mailbox"></div>
 			<div class="sign" title="Sign"></div>
-			<div id="app"></div>
 		</div>
 
 		<div class="level-box-container">
@@ -292,10 +291,9 @@
 		</div>
 	</div>
 	
-
-<!-- 加载 cplayer 脚本以支持背景音乐 -->
-<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-<script>
+	<!-- 加载 cplayer 脚本以支持背景音乐 -->
+	<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+	<script>
 	const app = new APlayer({
     container: document.getElementById('app'),
 	autoplay: true,
@@ -327,8 +325,7 @@
 	}
 	);
 
-</script>
-	
+	</script>
 	<script>
 		/* loader */
 		(function() {
@@ -336,14 +333,11 @@
 		})();
 
 	</script>
-
 	<script src="js/src/arknights.js"></script>
 	<script src="js/src/jquery.3.3.1.min.js?v=1.0"></script>
 	<script src="js/src/jquery.pjax.js?v=1.0"></script>
 	<script src="js/src/GYST.js?v=1.0"></script>
 	<script src="js/src/parallax.3.1.0.min.js?v=1.0"></script>
 	<script src="js/scripts.js?v=1.1"></script>
-	
 </body>
-
 </html>
