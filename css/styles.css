@@ -52,7 +52,7 @@ header {
 	pointer-events: none
 }
 
-.author {
+.option {
 	font-family: 'Noto Sans SC', sans-serif;
 	color: #fff;
 	font-size: 3vh;
@@ -62,8 +62,43 @@ header {
 	position: fixed;
 }
 
-.author a {
-	color: #fff
+.option>.settings {
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	background: url(../img/UI_HOME.png);
+	background-position: -554px -115px;
+	transform: scale(0.75);
+}
+
+.option>.notice {
+	position: absolute;
+	height: 70px;
+	width: 73px;
+	background: url(../img/UI_HOME.png);
+	background-position: -680px -210px;
+	transform: scale(0.75);
+	margin: 0 75px;
+}
+
+.option>.mail {
+	position: absolute;
+	height: 52px;
+	width: 72px;
+	background: url(../img/UI_HOME.png);
+	background-position: -878px -1958px;
+	transform: scale(0.75);
+	margin: 10px 150px;
+}
+
+.option>.sign {
+	position: absolute;
+	height: 54px;
+	width: 74px;
+	background: url(../img/UI_HOME.png);
+	background-position: -618px -313px;
+	transform: scale(0.75);
+	margin: 10px 230px;
 }
 
 .social-link {
@@ -438,7 +473,7 @@ header {
 }
 
 .right.menu.box .container .pos-1 .top .line-left {
-	width: 60px;
+	width: 100px;
 	height: 3px;
 	margin-top: 8px;
 	background-color: #fff;
@@ -732,8 +767,8 @@ header {
 	background-color: #05a7dc;
 	opacity: .9;
 	height: calc(100% - 20px);
-	width: 240px;
-	margin: 8px 0 0 120px;
+	width: 230px;
+	margin: 8px 0 0 100px;
 	border-right: 1px solid transparent;
 	border-image: -webkit-linear-gradient(#05a7dc, #454545, #05a7dc) 1;
 	border-image: -moz-linear-gradient(#05a7dc, #454545, #05a7dc) 1;
@@ -987,8 +1022,19 @@ header {
 	width: 80%;
 }
 
+.doctor {
+	position: absolute;
+	height: 700px;
+	width: 197px;
+	background: url(../img/UI_HOME.png);
+	background-position: 0px -1348px;
+	transform: scale(0.5);
+	margin: 100px 65px;
+}
+
 .char.perspective.box img {
-	width: 100%
+	width: 100%;
+	transform: scale(0.85);
 }
 
 #canvas-dust {

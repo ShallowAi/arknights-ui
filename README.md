@@ -1,19 +1,19 @@
 # Arknights UI：H5 + CSS 复刻明日方舟主界面
+## Arknights UI: H5 + CSS Arknights Main page
 ![screenshot](screenshot.png)
 
 ## Demo
-<https://mashirozx.github.io/arknights-ui/>
+<https://g.arknight.xyz/>
 
-## IDEA
-本来只是想做个人物立绘挂上一个日历做壁纸的，然后顺手把按键也做了上去，感觉这么多键位可以开发不少功能呢。
+## Intro
+本项目为 `mashirozx/arknights-ui` 的修改分支. 未来会支持更多功能.
 
 ## 立绘
-立绘下载：<https://share.2heng.xin/?share/folder&user=1&sid=vRtSdN3p> 提取密码: U9HIc
+立绘下载：<https://s.arknight.xyz>
 
 ## TODO
 切换立绘、角色台词、支持修改用户信息、游戏等级的扇形图可以用来显示温度等信息、and more...
-
-如果你实现了新的功能，欢迎 PR！
+切换背景图片、背景音乐、其他细节调整
 
 ## 版权相关
 界面贴图素材都是游戏逆向出来的，仅供学习使用，请勿商用。

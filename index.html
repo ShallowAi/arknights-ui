@@ -1,39 +1,17 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html>
 <head>
 	<meta charset="utf-8">
-
 	<title>Arknights</title>
 	<meta name="description" content="Arknights">
-	<meta name="author" content="Mashiro">
-
+	<meta name="author" content="Mashiro, ShallowAi">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-
 	<!--[if lt IE 9]>
 	<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
 	<link rel="stylesheet" href="css/normalize.css?v=1.0">
 	<link rel="stylesheet" href="css/styles.css?v=1.0">
-
-	<script async src="https://s96.cnzz.com/z_stat.php?id=1277700683&web_id=1277700683"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100439904-7"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-100439904-7');
-
-	</script>
-
 	<style>
 		/* loader */
 		.loader-layer {
@@ -135,19 +113,21 @@
 	  -->
 
 	<div class="loader-layer" id="loader-layer">
-		<div class="tips">Tips: 如果加载速度过慢可以使用代理（本页托管于 GitHub Pages）。</div>
+		<div class="tips">Tips: 如果加载速度过慢可以使用代理（Powered by GitHub Pages）</div>
 		<div class="loader" id="loader">
 			<div class="bar">
 				<div class="circle"></div>
-				<p>Loading</p>
+				<p>Loading...</p>
 			</div>
 		</div>
 	</div>
 	<header>
-		<div class="author">
-
-			<a href="https://github.com/mashirozx/arknights-ui/" target="_blank"><img src="img/github.svg" class="social-link"> GitHub </a> <a href="https://weibo.com/2960337711" target="_blank"><img src="img/weibo.svg" class="social-link"> Weibo </a> <a href="https://2heng.xin/" target="_blank"><img src="img/wordpress.svg" class="social-link"> Blog </a>
-
+		<div class="option">
+			<div class="settings" title="Settings"></div>
+			<div class="notice" title="Notification"></div>
+			<div class="mail" title="Mailbox"></div>
+			<div class="sign" title="Sign"></div>
+			<div id="app"></div>
 		</div>
 
 		<div class="level-box-container">
@@ -161,8 +141,8 @@
 					</div>
 				</div>
 				<div class="user-info">
-					<div class="name">Mashiro</div>
-					<div class="id">ID: 37040126</div>
+					<div class="name">Doctor</div>
+					<div class="id">ID: 666666</div>
 				</div>
 			</div>
 		</div>
@@ -174,8 +154,9 @@
 				<img id="bg-img" class="cover" src="img/UI_HOME_FRONT_BKG.png">
 			</div>
 			<div id="char-arts-layer" class="layer" data-depth="0.01">
+				<div class="doctor"></div>
 				<div class="char perspective box">
-					<img src="img/char_010_chen_2b_merged.png">
+					<img src="img/char_003_kalts_3.png" alt="Chara">
 				</div>
 			</div>
 			<div id="left-menu-layer" class="layer" data-depth="0.2">
@@ -183,7 +164,7 @@
 					<div class="container" id="left-mune-adapter">
 						<div class="top">
 							<div class="dialog">
-								<span>博士？睡着了？哼，真没紧张感。</span>
+								<span>欢迎回家，博士</span>
 							</div>
 						</div>
 						<div class="bottom">
@@ -216,7 +197,7 @@
 							<div class="top">
 								<div class="line-left"></div>
 								<div class="battery"></div>
-								<div class="time" id="time">2019/06/05 22:33</div>
+								<div class="time" id="time">1970/01/01 12:00</div>
 								<div class="line-right"></div>
 							</div>
 							<div class="bottom">
@@ -224,16 +205,16 @@
 								<div class="status">
 									<div class="item money">
 										<div class="icon"></div>
-										<div class="amount">1000</div>
+										<div class="amount">0</div>
 									</div>
 									<div class="item jasper">
 										<div class="icon"></div>
-										<div class="amount">1000</div>
+										<div class="amount">0</div>
 										<div class="more"></div>
 									</div>
 									<div class="item stone">
 										<div class="icon"></div>
-										<div class="amount">1000</div>
+										<div class="amount">0</div>
 										<div class="more"></div>
 									</div>
 								</div>
@@ -244,13 +225,13 @@
 								<div class="icon"></div>
 								<div class="content">
 									<div class="figure">
-										<div class="value">125</div>
-										<div class="total">/125</div>
+										<div class="value">0</div>
+										<div class="total">/130</div>
 									</div>
 									<div class="battle">
 										<div class="text">作战</div>
 										<div class="current">当前</div>
-										<div class="level">5-10 长夜终尽</div>
+										<div class="level">6-18 只有你知道</div>
 									</div>
 								</div>
 							</div>
@@ -310,7 +291,44 @@
 			<canvas id="canvas-dust"></canvas>
 		</div>
 	</div>
+	
 
+<!-- 加载 cplayer 脚本以支持背景音乐 -->
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script>
+	const app = new APlayer({
+    container: document.getElementById('app'),
+	autoplay: true,
+	preload: 'auto',
+	loop: 'all',
+    audio: [
+	{
+        name: 'beta_intro',
+        url: './audio/beta/m_sys_void_intro.wav'
+    },
+	{
+        name: 'beta_loop',
+        url: './audio/beta/m_sys_void_loop.wav'
+	}
+	]
+	});
+
+	app.on('ended', function() 
+		{
+		if (typeof played == "undefined"){
+			app.list.clear();
+			app.list.add([{
+			name: 'beta_loop',
+			url: './audio/beta/m_sys_void_loop.wav',
+			}]);
+			var played = 1;
+			app.play();
+		}
+	}
+	);
+
+</script>
+	
 	<script>
 		/* loader */
 		(function() {
@@ -325,6 +343,7 @@
 	<script src="js/src/GYST.js?v=1.0"></script>
 	<script src="js/src/parallax.3.1.0.min.js?v=1.0"></script>
 	<script src="js/scripts.js?v=1.1"></script>
+	
 </body>
 
 </html>
