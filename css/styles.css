@@ -349,8 +349,8 @@ header {
 	height: 35px;
 	width: 35px;
 	background: url(../img/UI_HOME.png);
-	background-position: -69px -26px;
-	background-size: auto 1800%;
+	background-position: -74px -26px;
+	background-size: auto 1900%;
 	position: absolute;
 	margin: 8px;
 }
@@ -376,7 +376,7 @@ header {
 	height: 35px;
 	width: 35px;
 	background: url(../img/UI_HOME.png);
-	background-position: -195px -897px;
+	background-position: -194px -897px;
 	background-size: auto 1750%;
 	position: absolute;
 	margin: 8px;
