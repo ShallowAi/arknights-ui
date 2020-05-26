@@ -3,7 +3,7 @@
  * Site: https://2heng.xin
  * License: MIT
  */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:500,700,900|Noto+Serif+SC:500,700,900&display=swap&subset=chinese-simplified');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,500,700,900|Noto+Serif+SC:500,700,900&display=swap&subset=chinese-simplified');
 
 /* normalize */
 
@@ -176,16 +176,16 @@ header {
 	font-size: 33px;
 	font-weight: 500;
 	position: absolute;
-	margin: 134px 62px;
+	margin: 134px 60px;
 }
 
 .user-info .id {
 	font-family: 'Noto Sans SC', sans-serif;
 	color: #fff;
-	font-size: 15px;
-	font-weight: 500;
+	font-size: 14px;
+	font-weight: 100;
 	position: absolute;
-	margin: 171px 72px;
+	margin: 171px 80px;
 	width: 100%;
 }
 
@@ -293,7 +293,7 @@ header {
 	font-family: 'Noto Sans SC', sans-serif;
 	color: #fff;
 	font-size: 13px;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 57px;
 }
 
@@ -459,6 +459,7 @@ header {
 	color: #fff;
 	font-family: 'Noto Sans SC', sans-serif;
 	font-size: 18px;
+	font-weight: 500;
 	white-space: nowrap;
 	margin: 0 10px
 }
@@ -1034,7 +1035,7 @@ header {
 
 .char.perspective.box img {
 	width: 100%;
-	transform: scale(0.85);
+	transform: scale(0.9)
 }
 
 #canvas-dust {

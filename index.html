@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<title>Arknights</title>
 	<meta name="description" content="Arknights">
+	<meta name="keywords" content="Arknights+UI">
+	<meta name="description" content="Arknights html5 main page.">
 	<meta name="author" content="Mashiro, ShallowAi">
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 	<!--[if lt IE 9]>
@@ -12,6 +14,7 @@
 	<![endif]-->
 	<link rel="stylesheet" href="css/normalize.css?v=1.0">
 	<link rel="stylesheet" href="css/styles.css?v=1.0">
+	<link rel="stylesheet" href="css/settings.css">
 	<style>
 		/* loader */
 		.loader-layer {
@@ -121,22 +124,35 @@
 			</div>
 		</div>
 	</div>
+
+<!-- 界面主框体 -->
+<div id="main">
+
+	<!-- 头部 不跟随移动部分 -->
 	<header>
-		<div class="option">
-			<div class="settings" title="Settings"><div id="app" style="display: none"></div></div>
-			<div class="notice" title="Notification"></div>
-			<div class="mail" title="Mailbox"></div>
-			<div class="sign" title="Sign"></div>
+
+		<!-- 功能区 -->
+		<div class="option" id="option">
+			<div class="settings" id="opensettings" title="Settings"><div id="app" style="display: none"></div></div>
+			<div class="notice" id="opennotice" title="Notification"></div>
+			<div class="mail" id="openmail" title="Mailbox"></div>
+			<div class="sign" id="opensign" title="Sign"></div>
 		</div>
 
-		<div class="level-box-container">
+		<!-- 设置页面 -->
+		<div class="settings-page">
+			<button class="back" value="test"></button>
+		</div>
+
+		<!-- 等级 -->
+		<div class="level-box-container" id="level-box-container">
 			<div class="level-box" id="level-box-adapter">
 				<div class="level-logo"></div>
 				<div class="user-level">
 					<div class="level-chart">
 						<div class="chart-bg" id="chart-bg"></div>
 						<div class="chart-pr" id="chart-pr"></div>
-						<div class="level-num" id="level-num">64</div>
+						<div class="level-num" id="level-num">66</div>
 					</div>
 				</div>
 				<div class="user-info">
@@ -146,11 +162,11 @@
 			</div>
 		</div>
 	</header>
-
+	<!-- 跟随移动部分 -->
 	<div id="view-box" class="view-box">
 		<div id="mark" class="mark" data-pointer-events="true">
 			<div id="bg-layer" class="layer" data-depth="0.0">
-				<img id="bg-img" class="cover" src="img/UI_HOME_FRONT_BKG.png">
+				<img id="bg-img" class="cover" src="img/bg/UI_HOME_FRONT_BKG.png">
 			</div>
 			<div id="char-arts-layer" class="layer" data-depth="0.01">
 				<div class="doctor"></div>
@@ -195,7 +211,7 @@
 						<div class="pos-1">
 							<div class="top">
 								<div class="line-left"></div>
-								<div class="battery"></div>
+								<div class="battery" id="battery"></div>
 								<div class="time" id="time">1970/01/01 12:00</div>
 								<div class="line-right"></div>
 							</div>
@@ -290,8 +306,9 @@
 			<canvas id="canvas-dust"></canvas>
 		</div>
 	</div>
-	
-	<!-- 加载 cplayer 脚本以支持背景音乐 -->
+</div>
+
+	<!-- 加载 Aplayer 脚本以支持背景音乐 -->
 	<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
 	<script>
 	const app = new APlayer({
@@ -333,6 +350,7 @@
 		})();
 
 	</script>
+	<script src="js/listener.js"></script>
 	<script src="js/src/arknights.js"></script>
 	<script src="js/src/jquery.3.3.1.min.js?v=1.0"></script>
 	<script src="js/src/jquery.pjax.js?v=1.0"></script>

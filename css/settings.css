@@ -1,0 +1,14 @@
+/*!
+ * Author: ShallowAi
+ * License: MIT
+ */
+.settings-page {
+	 display: none;
+	 position: absolute;
+}
+.settings-page .back {
+	position: absolute;
+	height: 52px;
+	width: 72px;
+
+}
