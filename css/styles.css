@@ -67,7 +67,7 @@ header {
 	height: 70px;
 	width: 70px;
 	background: url(../img/UI_HOME.png);
-	background-position: -554px -115px;
+	background-position: -554px -113px;
 	transform: scale(0.75);
 }
 
@@ -76,7 +76,7 @@ header {
 	height: 70px;
 	width: 73px;
 	background: url(../img/UI_HOME.png);
-	background-position: -680px -210px;
+	background-position: -679px -209px;
 	transform: scale(0.75);
 	margin: 0 75px;
 }
@@ -226,6 +226,31 @@ header {
 	top: auto !important
 }
 
+#left-button-layer {
+	bottom: 0 !important;
+	top: auto !important
+}
+
+.switch {
+	width: 50vw;
+	height: 98vh;
+	margin: 0 auto 30vh 36vh;
+	transform: perspective(30em) scale(0.9);
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+}
+
+.switch .button{
+	position: absolute;
+	height: 67px;
+	width: 67px;
+	background: url(../img/UI_HOME.png);
+	background-position: -205px -569px;
+	transform: scale(0.75);
+}
+
 .left.menu.box {
 	width: 50vw;
 	height: 98vh;
@@ -251,7 +276,7 @@ header {
 
 .left.menu.box .container .top {
 	height: 40%;
-	width: 100%
+	width: 100%;
 }
 
 .left.menu.box .container .bottom {
@@ -274,6 +299,22 @@ header {
 	height: 100%
 }
 
+
+.left.menu.box .container .bottom .rightbutton {
+	width: 20%;
+	height: 100%
+}
+
+.left.menu.box .container .bottom .rightbutton .pos-1 {
+	width: 100%;
+	height: 50%
+}
+
+.left.menu.box .container .bottom .rightbutton .pos-2 {
+	width: 100%;
+	height: 50%
+}
+
 .left.menu.box .container .bottom .right .pos-1 {
 	height: 50%;
 	width: 100%;
@@ -292,7 +333,7 @@ header {
 	height: 57px;
 	font-family: 'Noto Sans SC', sans-serif;
 	color: #fff;
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 57px;
 }
@@ -390,6 +431,47 @@ header {
 	font-weight: 900;
 	text-align: right;
 	padding: 13px;
+}
+
+.left.menu.box .container .bottom .rightbutton .pos-1 .achievements {
+	background-color: #424242;
+	opacity: .9;
+	margin: 5px 5px 2.5px 5px;
+	width: calc(100% - 25px);
+	height: calc(100% - 7.5px);
+	
+}
+
+
+.left.menu.box .container .bottom .rightbutton .pos-1 .achievements .icon {
+	height: 40px;
+	width: 40px;
+	background: url(../img/UI_HOME.png);
+	background-position: -163px -296px;
+	background-size: auto 1600%;
+	position: absolute;
+	margin: 8px;
+}
+
+.left.menu.box .container .bottom .rightbutton .pos-2 .ranktop {
+	background-color: #e9e9e9;
+	opacity: .9;
+	margin: 2.5px 5px 5px 5px;
+	width: calc(100% - 25px);
+	height: calc(100% - 7.5px);
+	
+}
+
+
+.left.menu.box .container .bottom .rightbutton .pos-2 .ranktop .icon {
+	height: 36px;
+	width: 36px;
+	background: url(../img/UI_HOME.png);
+	background-position: -44px -62px;
+	background-size: auto 1650%;
+	position: absolute;
+	margin: 8px;
+	filter: invert(30%);
 }
 
 /* right perspective */
@@ -1024,13 +1106,13 @@ header {
 }
 
 .doctor {
-	position: absolute;
+	position: fixed;
 	height: 700px;
 	width: 197px;
 	background: url(../img/UI_HOME.png);
 	background-position: 0px -1348px;
 	transform: scale(0.5);
-	margin: 100px 65px;
+	margin: 12vh 10vh auto;
 }
 
 .char.perspective.box img {

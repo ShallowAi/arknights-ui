@@ -3,8 +3,8 @@ var dust = /** @class */ (function () {
     function dust() {
         this.x = 50;
         this.y = 50;
-        this.vx = Math.random() * 5 + 5;
-        this.vy = Math.random() * 5;
+        this.vx = Math.random() * 2 + 2;
+        this.vy = Math.random() * 2;
         this.color = '#fff';
         this.shadowBlur = Math.random() * 3;
         this.shadowX = (Math.random() * 2) - 1;
@@ -46,7 +46,7 @@ var canvasDust = /** @class */ (function () {
             }
             setInterval(function () {
                 _this.play();
-            }, 80);
+            }, 40);
         }
     };
     canvasDust.prototype.play = function () {
@@ -93,7 +93,7 @@ var canvasDust = /** @class */ (function () {
         var height = window.innerHeight;
         this.width = width;
         this.height = height;
-        this.dustQuantity = Math.floor((width + height) / 30);
+        this.dustQuantity = Math.floor((width + height) / 35);
         if (canvas !== undefined) {
             canvas.width = width;
             canvas.height = height;

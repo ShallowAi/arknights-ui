@@ -15,12 +15,26 @@ function blurpage() {
 	document.getElementById("view-box").style.filter="blur(5px)";
 	document.getElementById("option").style.filter="blur(5px)";
 	document.getElementById("level-box-container").style.filter="blur(5px)";
-	
-	alert("Blur test");
 	document.getElementsByClassName("settings-page")[0].style.display="block";
 
+	document.getElementById("back").addEventListener("click", unblurpage);
+	// 移除
 	document.getElementById("opensettings").removeEventListener("click", blurpage);
 }
+
+/*!
+ * 取消背景高斯模糊
+*/
+function unblurpage() {
+	document.getElementById("view-box").style.filter="";
+	document.getElementById("option").style.filter="";
+	document.getElementById("level-box-container").style.filter="";
+	document.getElementsByClassName("settings-page")[0].style.display="none";
+
+	document.getElementById("opensettings").addEventListener("click", blurpage);
+	document.getElementById("back").removeEventListener("click", unblurpage);
+}
+
 /*!
  * 电源信息管理
 */
@@ -30,8 +44,6 @@ navigator.getBattery().then(function(battery) {
     updateLevelInfo();
   });
   function updateLevelInfo(){
-    console.log("Battery level: "
-                + battery.level * 100 + "%");
 	if (battery.level <= 1 && battery.level >= 0.75){
 		document.getElementById("battery").style.backgroundPosition="-356px -479px";
 	}

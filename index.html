@@ -10,7 +10,7 @@
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 	<!--[if lt IE 9]>
 	<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="css/normalize.css?v=1.0">
 	<link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -117,7 +117,7 @@
 
 	<div class="loader-layer" id="loader-layer">
 		<div class="tips">Tips: 如果加载速度过慢可以使用代理（Powered by GitHub Pages）</div>
-		<div class="loader" id="loader">
+		<div class="loader" id="loader" onload="bgminit()">
 			<div class="bar">
 				<div class="circle"></div>
 				<p>Loading...</p>
@@ -133,7 +133,7 @@
 
 		<!-- 功能区 -->
 		<div class="option" id="option">
-			<div class="settings" id="opensettings" title="Settings"><div id="app" style="display: none"></div></div>
+			<div class="settings" id="opensettings" title="Settings"></div>
 			<div class="notice" id="opennotice" title="Notification"></div>
 			<div class="mail" id="openmail" title="Mailbox"></div>
 			<div class="sign" id="opensign" title="Sign"></div>
@@ -141,7 +141,16 @@
 
 		<!-- 设置页面 -->
 		<div class="settings-page">
-			<button class="back" value="test"></button>
+			<div id="back" class="back">Back</div>
+			<!-- 背景音乐播放器 -->
+			<div id="bgmusic" style="display: none"></div>
+			<div id="bgchooser">
+				<button type="button" value="prev" onclick="prevbgm()"></button>
+				<ul>
+					<li></li>
+				</ul>
+				<button type="button" value="next" onclick="nextbgm()"></button>
+			</div>
 		</div>
 
 		<!-- 等级 -->
@@ -169,9 +178,14 @@
 				<img id="bg-img" class="cover" src="img/bg/UI_HOME_FRONT_BKG.png">
 			</div>
 			<div id="char-arts-layer" class="layer" data-depth="0.01">
-				<div class="doctor"></div>
 				<div class="char perspective box">
+					<div class="doctor"></div>
 					<img src="img/char_003_kalts_3.png" alt="Chara">
+				</div>
+			</div>
+			<div id="left-button-layer" class="layer" data-depth="0.1">
+				<div class="switch">
+					<div class="button"></div>
 				</div>
 			</div>
 			<div id="left-menu-layer" class="layer" data-depth="0.2">
@@ -196,7 +210,7 @@
 								<div class="pos-2">
 									<div class="information">
 										<div class="icon"></div>
-										<div class="text">情报</div>
+										<div class="text">档案</div>
 									</div>
 								</div>
 							</div>
@@ -246,7 +260,7 @@
 									<div class="battle">
 										<div class="text">作战</div>
 										<div class="current">当前</div>
-										<div class="level">6-18 只有你知道</div>
+										<div class="level">全部完成</div>
 									</div>
 								</div>
 							</div>
@@ -310,39 +324,7 @@
 
 	<!-- 加载 Aplayer 脚本以支持背景音乐 -->
 	<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-	<script>
-	const app = new APlayer({
-    container: document.getElementById('app'),
-	autoplay: true,
-	preload: 'auto',
-	loop: 'all',
-    audio: [
-	{
-        name: 'beta_intro',
-        url: './audio/beta/m_sys_void_intro.wav'
-    },
-	{
-        name: 'beta_loop',
-        url: './audio/beta/m_sys_void_loop.wav'
-	}
-	]
-	});
-
-	app.on('ended', function() 
-		{
-		if (typeof played == "undefined"){
-			app.list.clear();
-			app.list.add([{
-			name: 'beta_loop',
-			url: './audio/beta/m_sys_void_loop.wav',
-			}]);
-			var played = 1;
-			app.play();
-		}
-	}
-	);
-
-	</script>
+	<script src="js/player.js" async="async"></script>
 	<script>
 		/* loader */
 		(function() {
