@@ -540,10 +540,12 @@ header {
 .right.menu.box .container .pos-1 .top .time {
 	color: #fff;
 	font-family: 'Noto Sans SC', sans-serif;
+	text-shadow: 5px 5px 3px #696969;
 	font-size: 18px;
 	font-weight: 500;
 	white-space: nowrap;
-	margin: 0 10px
+	margin: 0 10px;
+	cursor: default;
 }
 
 .right.menu.box .container .pos-1 .top .battery {
@@ -631,6 +633,7 @@ header {
 	color: #fff;
 	font-family: 'Noto Sans SC', sans-serif;
 	font-size: 33px;
+	text-shadow: 4px 4px 3px #808080;
 	white-space: nowrap;
 	margin: 0 10px
 }
