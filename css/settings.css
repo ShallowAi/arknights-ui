@@ -3,12 +3,24 @@
  * License: MIT
  */
 .settings-page {
-	 display: none;
-	 position: absolute;
+	display: none;
+	position: absolute;
+	z-index: 10;
+}
+.settings-page .list{
+	list-style: none;
+}
+.settings-page .list li{
+	float: left;
+}
+.settings-page .listbg{
+	list-style: none;
+}
+.settings-page .listbg li{
+	float: left;
 }
 .settings-page .back {
-	position: absolute;
 	height: 52px;
 	width: 72px;
-
+	background: ;
 }

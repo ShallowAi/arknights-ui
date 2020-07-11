@@ -27,7 +27,7 @@ html,
 body {
 	width: 100%;
 	height: 100%;
-	overflow: hidden
+	overflow: hidden;
 }
 
 a {
@@ -66,8 +66,7 @@ header {
 	position: absolute;
 	height: 70px;
 	width: 70px;
-	background: url(../img/UI_HOME.png);
-	background-position: -554px -113px;
+	background: url(../img/UI_HOME.png) -554px -113px;
 	transform: scale(0.75);
 }
 
@@ -75,8 +74,7 @@ header {
 	position: absolute;
 	height: 70px;
 	width: 73px;
-	background: url(../img/UI_HOME.png);
-	background-position: -679px -209px;
+	background: url(../img/UI_HOME.png) -679px -209px;
 	transform: scale(0.75);
 	margin: 0 75px;
 }
@@ -85,8 +83,7 @@ header {
 	position: absolute;
 	height: 52px;
 	width: 72px;
-	background: url(../img/UI_HOME.png);
-	background-position: -878px -1958px;
+	background: url(../img/UI_HOME.png) -878px -1958px;
 	transform: scale(0.75);
 	margin: 10px 150px;
 }
@@ -95,8 +92,7 @@ header {
 	position: absolute;
 	height: 54px;
 	width: 74px;
-	background: url(../img/UI_HOME.png);
-	background-position: -618px -313px;
+	background: url(../img/UI_HOME.png) -618px -313px;
 	transform: scale(0.75);
 	margin: 10px 230px;
 }
@@ -117,17 +113,15 @@ header {
 .level-box {
 	height: 196px;
 	width: 172px;
-	transform: scale(1);
 	/*  adapter */
-	transform-origin: center left;
+	transform-origin: left center;
 }
 
 .level-logo {
 	position: absolute;
 	height: 196px;
 	width: 172px;
-	background: url(../img/UI_HOME.png);
-	background-position: 494px 828px;
+	background: url(../img/UI_HOME.png) 494px 828px;
 	filter: brightness(30%);
 }
 
@@ -136,8 +130,7 @@ header {
 	margin-top: 89px;
 	height: 34px;
 	width: 172px;
-	background: url(../img/UI_HOME.png);
-	background-position: -20px -238px;
+	background: url(../img/UI_HOME.png) -20px -238px;
 	background-size: auto 3650%;
 }
 
@@ -146,8 +139,7 @@ header {
 	margin: -79px auto auto 54px;
 	height: 115px;
 	width: 115px;
-	background: url(../img/UI_HOME.png);
-	background-position: 0px -295px;
+	background: url(../img/UI_HOME.png) 0 -295px;
 	background-size: auto 1103%;
 }
 
@@ -156,8 +148,7 @@ header {
 	margin: -79px auto auto 54px;
 	height: 115px;
 	width: 115px;
-	background: url(../img/UI_HOME.png);
-	background-position: 488px -398px;
+	background: url(../img/UI_HOME.png) 488px -398px;
 	background-size: auto 1103%;
 }
 
@@ -246,8 +237,7 @@ header {
 	position: absolute;
 	height: 67px;
 	width: 67px;
-	background: url(../img/UI_HOME.png);
-	background-position: -205px -569px;
+	background: url(../img/UI_HOME.png) -205px -569px;
 	transform: scale(0.75);
 }
 
@@ -272,6 +262,7 @@ header {
 	transform: scale(1);
 	/* adapter */
 	transform-origin: bottom left;
+	cursor: default;
 }
 
 .left.menu.box .container .top {
@@ -296,7 +287,7 @@ header {
 
 .left.menu.box .container .bottom .right {
 	width: 40%;
-	height: 100%
+	height: 100%;
 }
 
 
@@ -362,8 +353,7 @@ header {
 	content: "";
 	height: 24px;
 	width: 140px;
-	background: url(../img/UI_HOME.png);
-	background-position: -147px 1913px;
+	background: url(../img/UI_HOME.png) -147px 1913px;
 	background-size: auto 6000%;
 	position: absolute;
 	margin: -5px;
@@ -372,8 +362,7 @@ header {
 .left.menu.box .container .bottom .left .activity-img {
 	height: 115px;
 	width: 251px;
-	background: url(../img/UI_HOME_ACTIVITY_BANNER_ZONE.png);
-	background-position: -14px -38px;
+	background: url(../img/UI_HOME_ACTIVITY_BANNER_ZONE.png) -14px -38px;
 	background-size: 238%;
 }
 
@@ -389,8 +378,7 @@ header {
 .left.menu.box .container .bottom .right .pos-1 .friends .icon {
 	height: 35px;
 	width: 35px;
-	background: url(../img/UI_HOME.png);
-	background-position: -74px -26px;
+	background: url(../img/UI_HOME.png) -74px -26px;
 	background-size: auto 1900%;
 	position: absolute;
 	margin: 8px;
@@ -416,8 +404,7 @@ header {
 .left.menu.box .container .bottom .right .pos-2 .information .icon {
 	height: 35px;
 	width: 35px;
-	background: url(../img/UI_HOME.png);
-	background-position: -194px -897px;
+	background: url(../img/UI_HOME.png) -194px -897px;
 	background-size: auto 1750%;
 	position: absolute;
 	margin: 8px;
@@ -446,8 +433,7 @@ header {
 .left.menu.box .container .bottom .rightbutton .pos-1 .achievements .icon {
 	height: 40px;
 	width: 40px;
-	background: url(../img/UI_HOME.png);
-	background-position: -163px -296px;
+	background: url(../img/UI_HOME.png) -163px -296px;
 	background-size: auto 1600%;
 	position: absolute;
 	margin: 8px;
@@ -466,8 +452,7 @@ header {
 .left.menu.box .container .bottom .rightbutton .pos-2 .ranktop .icon {
 	height: 36px;
 	width: 36px;
-	background: url(../img/UI_HOME.png);
-	background-position: -44px -62px;
+	background: url(../img/UI_HOME.png) -44px -62px;
 	background-size: auto 1650%;
 	position: absolute;
 	margin: 8px;
@@ -490,6 +475,7 @@ header {
 	margin: 0 auto auto calc(51vw - 40px);
 	*/
 	float: right;
+	cursor: default;
 	margin: 0 -80px auto auto;
 	transform: perspective(30em) rotateY(-10deg) scale(0.9);
 }
@@ -503,7 +489,7 @@ header {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
-	display: none
+	display: none;
 }
 
 
@@ -545,15 +531,13 @@ header {
 	font-weight: 500;
 	white-space: nowrap;
 	margin: 0 10px;
-	cursor: default;
 }
 
 .right.menu.box .container .pos-1 .top .battery {
 	margin-left: 10px;
 	height: 20px;
 	width: 34px;
-	background: url(../img/UI_HOME.png);
-	background-position: 0px -34px;
+	background: url(../img/UI_HOME.png) 0 -34px;
 	background-size: auto 4500%;
 }
 
@@ -608,24 +592,21 @@ header {
 .right.menu.box .container .pos-1 .bottom .status .item.money .icon {
 	width: 80px;
 	height: 50px;
-	background: url(../img/UI_HOME.png);
-	background-position: -1225px -355px;
+	background: url(../img/UI_HOME.png) -1225px -355px;
 	background-size: auto 6600%;
 }
 
 .right.menu.box .container .pos-1 .bottom .status .item.jasper .icon {
 	width: 50px;
 	height: 50px;
-	background: url(../img/UI_HOME.png);
-	background-position: -446px -1103px;
+	background: url(../img/UI_HOME.png) -446px -1103px;
 	background-size: auto 5300%;
 }
 
 .right.menu.box .container .pos-1 .bottom .status .item.stone .icon {
 	width: 50px;
 	height: 50px;
-	background: url(../img/UI_HOME.png);
-	background-position: -1040px -464px;
+	background: url(../img/UI_HOME.png) -1040px -464px;
 	background-size: auto 5200%;
 }
 
@@ -641,8 +622,7 @@ header {
 .right.menu.box .container .pos-1 .bottom .status .item .more {
 	width: 36px;
 	height: 36px;
-	background: url(../img/UI_HOME.png);
-	background-position: -732px -595px;
+	background: url(../img/UI_HOME.png) -732px -595px;
 	background-size: auto 5800%;
 }
 
@@ -674,8 +654,7 @@ header {
 	width: 140px;
 	height: 140px;
 	position: absolute;
-	background: url(../img/UI_HOME.png);
-	background-position: -588px -751px;
+	background: url(../img/UI_HOME.png) -588px -751px;
 	background-size: auto 1600%;
 	filter: invert(20%);
 	opacity: .5
@@ -694,8 +673,7 @@ header {
 	width: 195px;
 	height: 130px;
 	margin: 20.5px 0 0 10px;
-	background: url(../img/UI_HOME.png);
-	background-position: 0px -531px;
+	background: url(../img/UI_HOME.png) 0 -531px;
 	background-size: auto 1257%;
 }
 
@@ -706,7 +684,7 @@ header {
 	font-weight: 700;
 	text-align: right;
 	margin: 0 20px;
-	text-shadow: #8b8b8b 5px 5px 0px;
+	text-shadow: #8b8b8b 5px 5px 0;
 }
 
 .right.menu.box .container .pos-2 .intellect .content .figure .total {
@@ -726,7 +704,7 @@ header {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
-	align-items: flex-start
+	align-items: flex-start;
 }
 
 .right.menu.box .container .pos-2 .intellect .content .battle .text {
@@ -734,7 +712,7 @@ header {
 	color: #323232;
 	font-size: 60px;
 	font-weight: 900;
-	white-space: nowrap
+	white-space: nowrap;
 }
 
 .right.menu.box .container .pos-2 .intellect .content .battle .current {
@@ -776,8 +754,7 @@ header {
 .right.menu.box .container .pos-3 .team .icon {
 	width: 80px;
 	height: 80px;
-	background: url(../img/UI_HOME.png);
-	background-position: 354px -330px;
+	background: url(../img/UI_HOME.png) 354px -330px;
 	background-size: auto 1500%;
 	position: absolute;
 	margin: 13px 0 0 166px;
@@ -805,8 +782,7 @@ header {
 .right.menu.box .container .pos-3 .member .icon {
 	width: 80px;
 	height: 80px;
-	background: url(../img/UI_HOME.png);
-	background-position: 296px -477px;
+	background: url(../img/UI_HOME.png) 296px -477px;
 	background-size: auto 1500%;
 	position: absolute;
 	margin: 13px 0 0 166px;
@@ -846,7 +822,6 @@ header {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: flex-start;
-
 }
 
 .right.menu.box .container .pos-4 .shop {
@@ -864,8 +839,7 @@ header {
 .right.menu.box .container .pos-4 .shop .icon {
 	width: 93px;
 	height: 80px;
-	background: url(../img/UI_HOME.png);
-	background-position: 284px -360px;
+	background: url(../img/UI_HOME.png) 284px -360px;
 	background-size: auto 2000%;
 	position: absolute;
 	margin: 13px 0 0 136px;
@@ -903,8 +877,7 @@ header {
 .right.menu.box .container .pos-4 .gamble .top .icon {
 	width: 20px;
 	height: 20px;
-	background: url(../img/UI_HOME.png);
-	background-position: -84px -138px;
+	background: url(../img/UI_HOME.png) -84px -138px;
 	background-size: auto 2000%;
 	position: absolute;
 	margin: 5px 0 0 5px;
@@ -942,8 +915,7 @@ header {
 .right.menu.box .container .pos-4 .gamble .bottom .left .icon {
 	width: 50px;
 	height: 50px;
-	background: url(../img/UI_HOME.png);
-	background-position: 276px -172px;
+	background: url(../img/UI_HOME.png) 276px -172px;
 	background-size: auto 1600%;
 	position: absolute;
 	margin: 5px 0 0 5px;
@@ -967,8 +939,7 @@ header {
 .right.menu.box .container .pos-4 .gamble .bottom .right .icon {
 	width: 50px;
 	height: 50px;
-	background: url(../img/UI_HOME.png);
-	background-position: 188px -228px;
+	background: url(../img/UI_HOME.png) 188px -228px;
 	background-size: auto 1650%;
 	position: absolute;
 	margin: 5px 0 0 5px;
@@ -1013,8 +984,7 @@ header {
 .right.menu.box .container .pos-5 .task .icon {
 	width: 72px;
 	height: 80px;
-	background: url(../img/UI_HOME.png);
-	background-position: -1px -90px;
+	background: url(../img/UI_HOME.png) -1px -90px;
 	background-size: auto 1800%;
 	position: absolute;
 	margin: 13px 0 0 136px;
@@ -1042,8 +1012,7 @@ header {
 .right.menu.box .container .pos-5 .infrastructure .icon {
 	width: 80px;
 	height: 80px;
-	background: url(../img/UI_HOME.png);
-	background-position: -69px -61px;
+	background: url(../img/UI_HOME.png) -69px -61px;
 	background-size: auto 1700%;
 	position: absolute;
 	margin: 13px 0 0 136px;
@@ -1063,8 +1032,7 @@ header {
 .right.menu.box .container .pos-5 .infrastructure .beta {
 	width: 40px;
 	height: 9px;
-	background: url(../img/UI_HOME.png);
-	background-position: -20px -34px;
+	background: url(../img/UI_HOME.png) -20px -34px;
 	background-size: 1700% auto;
 	position: absolute;
 	margin: -16px 0 0 15px;
@@ -1081,8 +1049,7 @@ header {
 .right.menu.box .container .pos-5 .warehouse .icon {
 	width: 50px;
 	height: 50px;
-	background: url(../img/UI_HOME.png);
-	background-position: 86px -472px;
+	background: url(../img/UI_HOME.png) 86px -472px;
 	background-size: auto 1700%;
 	position: absolute;
 	margin: 42px 0 0 22px;
@@ -1112,8 +1079,7 @@ header {
 	position: fixed;
 	height: 700px;
 	width: 197px;
-	background: url(../img/UI_HOME.png);
-	background-position: 0px -1348px;
+	background: url(../img/UI_HOME.png) 0px -1348px;
 	transform: scale(0.5);
 	margin: 12vh 10vh auto;
 }

@@ -125,6 +125,7 @@
 		</div>
 	</div>
 
+
 <!-- 界面主框体 -->
 <div id="main">
 
@@ -133,24 +134,11 @@
 
 		<!-- 功能区 -->
 		<div class="option" id="option">
-			<div class="settings" id="opensettings" title="Settings"></div>
+			<div class="settings" id="opensettings" title="Settings">
+			</div>
 			<div class="notice" id="opennotice" title="Notification"></div>
 			<div class="mail" id="openmail" title="Mailbox"></div>
 			<div class="sign" id="opensign" title="Sign"></div>
-		</div>
-
-		<!-- 设置页面 -->
-		<div class="settings-page">
-			<div id="back" class="back">Back</div>
-			<!-- 背景音乐播放器 -->
-			<div id="bgmusic" style="display: none"></div>
-			<div id="bgchooser">
-				<button type="button" value="prev" onclick="prevbgm()"></button>
-				<ul>
-					<li></li>
-				</ul>
-				<button type="button" value="next" onclick="nextbgm()"></button>
-			</div>
 		</div>
 
 		<!-- 等级 -->
@@ -171,6 +159,40 @@
 			</div>
 		</div>
 	</header>
+
+	<!-- 设置页面 -->
+	<div class="settings-page">
+		<div id="back" class="back">Back</div>
+		<!-- 背景音乐播放器 -->
+		<div id="bgmusic" style="display: none"></div>
+		<div id="bgchooser">
+			<button type="button" value="prev" onclick="prevbgm()">上</button>
+			<ul class="list">
+				<li>生命流 LifeStream</li>
+				<li>骑兵与猎人 GraniAndTheTreasureOfKnights</li>
+				<li>靶向药物 NessarySolutions</li>
+				<li>Ready? - 火蓝之心 HeartofSurgingFlame</li>
+				<li>AflameAvenue - 火蓝之心 HeartofSurgingFlame</li>
+				<li>NotYourBusiness - 火蓝之心 HeartofSurgingFlame</li>
+				<li>战地秘闻 OperationalIntelligence</li>
+				<li>喧闹法则 CodeOfBrawl</li>
+				<li>Speedoflight - 喧闹法则 CodeOfBrawl</li>
+				<li>局部坏死 PartialNecrosis</li>
+				<li>烘炉示岁 AncientForge</li>
+				<li>午间逸话 StoriesOfAfternoon</li>
+				<li>危机合约 荒芜 ContingencyContract Barrenland</li>
+				<li>生于黑夜 DarknightsMemoir</li>
+				<li>苦难摇篮 TheBirthOfTragedy</li>
+				<li>危机合约 黄铁 ContingencyContract Pyrite</li>
+			</ul>
+			<button type="button" value="next" onclick="nextbgm()">下</button>
+			<ul class="listbg">
+				<li><img src="img/bg/UI_HOME_FRONT_BKG-BETA.png" height="256" width="256">RhodeIsland Beta</li>
+				<li><img src="img/bg/UI_HOME_FRONT_BKG.png" height="256" width="256">RhodeIsland</li>
+			</ul>
+		</div>
+	</div>
+
 	<!-- 跟随移动部分 -->
 	<div id="view-box" class="view-box">
 		<div id="mark" class="mark" data-pointer-events="true">
@@ -255,12 +277,12 @@
 								<div class="content">
 									<div class="figure">
 										<div contenteditable="true" class="value">0</div>
-										<div class="total">/130</div>
+										<div contenteditable="true" class="total">/130</div>
 									</div>
 									<div class="battle">
 										<div class="text">作战</div>
 										<div class="current">当前</div>
-										<div class="level">全部完成</div>
+										<div contenteditable="true" class="level">全部完成</div>
 									</div>
 								</div>
 							</div>
