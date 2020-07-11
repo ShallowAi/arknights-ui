@@ -168,6 +168,7 @@ header {
 	font-weight: 500;
 	position: absolute;
 	margin: 134px 60px;
+	white-space: nowrap;
 }
 
 .user-info .id {

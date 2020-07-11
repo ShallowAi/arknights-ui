@@ -154,7 +154,7 @@
 				</div>
 				<div class="user-info">
 					<div class="name">Doctor</div>
-					<div class="id">ID: 666666</div>
+					<div class="id">ID: 1</div>
 				</div>
 			</div>
 		</div>
@@ -162,12 +162,30 @@
 
 	<!-- 设置页面 -->
 	<div class="settings-page">
-		<div id="back" class="back">Back</div>
+		<div class="button">
+			<button id="back" class="back"></button>
+			<div style="display: inline-block;">
+				<div class="logo"></div>
+				<div class="text">设置</div>
+			</div>
+		</div>
 		<!-- 背景音乐播放器 -->
 		<div id="bgmusic" style="display: none"></div>
-		<div id="bgchooser">
-			<button type="button" value="prev" onclick="prevbgm()">上</button>
-			<ul class="list">
+		<div class="center">
+			<div class="left">
+				<ul class="sidebar">
+					<li>游戏</li>
+					<li>声音</li>
+					<li>提醒</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div>玩家等级：<input id="level" type="range" min="1" max="120"><p id="level-text"></p></div>
+				<div>玩家名：<input id="username" type="text" maxlength="8"></div>
+				<div>玩家ID：<input id="uid" type="number" oninput="if(value.length > 10) value=value.slice(0,10)"></div>
+
+				<div id="bgchooser">
+				<ul class="list">
 				<li>生命流 LifeStream</li>
 				<li>骑兵与猎人 GraniAndTheTreasureOfKnights</li>
 				<li>靶向药物 NessarySolutions</li>
@@ -184,13 +202,18 @@
 				<li>生于黑夜 DarknightsMemoir</li>
 				<li>苦难摇篮 TheBirthOfTragedy</li>
 				<li>危机合约 黄铁 ContingencyContract Pyrite</li>
-			</ul>
-			<button type="button" value="next" onclick="nextbgm()">下</button>
-			<ul class="listbg">
+
+				</ul>
+					<button type="button" value="prev" onclick="prevbgm()">上</button>
+					<button type="button" value="next" onclick="nextbgm()">下</button>
+				<ul class="listbg">
 				<li><img src="img/bg/UI_HOME_FRONT_BKG-BETA.png" height="256" width="256">RhodeIsland Beta</li>
 				<li><img src="img/bg/UI_HOME_FRONT_BKG.png" height="256" width="256">RhodeIsland</li>
-			</ul>
+				</ul>
+				</div>
+			</div>
 		</div>
+		<div class="endmask"></div>
 	</div>
 
 	<!-- 跟随移动部分 -->
